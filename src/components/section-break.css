@@ -1,0 +1,23 @@
+.section-break {
+	margin: 0em 0em;
+	border-top: 0.2em;
+	border-bottom: 0.2em;
+	border-radius: 1em;
+	border-style: solid;
+	visibility: visible;
+}
+
+.section-break[dark="dark"] {
+	background-color: #465b6b;
+	border-color: #465b6b;
+}
+
+.section-break[medium="medium"] {
+	background-color: #748796;
+	border-color: #748796;
+}
+
+.section-break[light="light"] {
+	background-color: #c0cfd9;
+	border-color: #c0cfd9;
+}

@@ -1,22 +1,38 @@
-body {
-	font-family: 'Poppins', sans-serif;
-	color: #dedede;
-	background: #222;
-	font-size: 1.2em;
-	margin: 1em;
+@page {
+	/* set so that printing has small default margins */
+	margin: 0mm;
 }
 
-.app-header {
-	margin: -0.5em -0.5em 0em -1em;
-	padding: 1em;
-	background: #111;
-	color: #dedede;
+@media screen {
+	/* try to make the page print-like */
+	body {
+		width: 8.5in;
+	}
 }
 
-label {
-	display: table; /* block formatting, with a minimum width */
-}
+@media screen, print {
+	html {
+		margin: 0px;
+	}
+	body {
+		font-family: 'Poppins', sans-serif;
+		font-size: 0.8em;
+		color: #243745;
+		text-align: justify;
 
-a {
-	color: inherit;
+		/* print background colors */
+		-webkit-print-color-adjust: exact;
+
+		/* kill all margin */
+		margin: auto;
+		margin-top: -1em;
+
+		/*this allows for \n to be processed as line breaks */
+		white-space: pre-line;
+	}
+
+	main {
+		margin: 5mm;
+	}
+
 }

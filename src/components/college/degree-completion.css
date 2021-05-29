@@ -1,0 +1,7 @@
+.degree-completion::before {
+	content: ", "
+}
+
+.degree-completion {
+	font-style: italic;
+}

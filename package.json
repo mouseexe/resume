@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html",
-    "test": "jest --watch"
+    "build": "parcel build index.html"
   },
   "dependencies": {
     "@babel/core": "^7.12.16",
     "@testing-library/dom": "^7.29.4",
     "@testing-library/jest-dom": "^5.11.9",
+    "contentful": "^8.3.7",
     "core-js": "^3.8.3",
     "eslint-config-tram-one": "^4.0.0",
     "jest": "^26.6.3",

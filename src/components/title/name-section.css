@@ -1,0 +1,4 @@
+.name-section .name-content {
+	display: flex;
+	justify-content: space-between;
+}

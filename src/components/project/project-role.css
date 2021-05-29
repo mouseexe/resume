@@ -1,0 +1,7 @@
+.project-role {
+	font-style: italic;
+}
+
+.project-role::after {
+  content: ", ";
+}

@@ -1,0 +1,6 @@
+.resume-name {
+	font-size: 3em;
+
+	/* force the height of the text to be static */
+	line-height: 1em;
+}
