@@ -5,6 +5,6 @@ const html = registerHtml()
 
 export default (props, children) => {
 	return html`
-		<div className="resume-name">${children}</div>
+		<h1 className="resume-name">${children}</h1>
 	`
 }

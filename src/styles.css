@@ -35,4 +35,10 @@
 		margin: 5mm;
 	}
 
+	/* header tags are used for semantic meaning, not styling */
+	h1, h2, h3, h4 {
+		margin: 0;
+		font-weight: inherit;
+	}
+
 }

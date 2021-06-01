@@ -1,5 +1,5 @@
 import { registerHtml } from 'tram-one'
-import sectionBreak from '../section-break'
+import sectionBreak from '../section-break/section-break'
 import './college-section.css'
 
 const html = registerHtml({
@@ -8,10 +8,10 @@ const html = registerHtml({
 
 export default (props, children) => {
 	return html`
-		<div className="college-section">
-			<div className="college-content">
+		<section className="college-section">
+			<section className="college-content">
 				${children}
-			</div>
-		</div>
+			</section>
+		</section>
 	`
 }

@@ -30,7 +30,7 @@ const home = () => {
 	// if resume content isn't ready yet, wait
 	// this will usually be instantaneous
 	if (!resumeContent.isLoaded) {
-		return html`<div>Loading...</div>`
+		return html`<code>Loading...</code>`
 	}
 
 	// if we errored, show an error message
@@ -78,7 +78,7 @@ const home = () => {
 	})
 
 	return html`
-		<main>
+		<article>
 			<name-section>
 				<resume-name>${resumeContent.content.name}</resume-name>
 				<contact-info>
@@ -86,7 +86,7 @@ const home = () => {
 				</contact-info>
 			</name-section>
 			${resumeBlocks}
-		</main>
+		</article>
 	`
 }
 

@@ -4,6 +4,6 @@ const html = registerHtml()
 
 export default (props, children) => {
 	return html`
-		<div className="contact-info">${children}</div>
+		<section className="contact-info">${children}</section>
 	`
 }
