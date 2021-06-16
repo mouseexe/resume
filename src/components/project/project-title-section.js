@@ -1,10 +1,12 @@
 import { registerHtml } from 'tram-one'
-import './contact-info.css'
+import './project-title-section.css'
 
 const html = registerHtml()
 
 export default (props, children) => {
 	return html`
-		<section className="contact-info">${children}</section>
+		<section className="project-title-section">
+			${children}
+		</section>
 	`
 }

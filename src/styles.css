@@ -16,7 +16,7 @@
 	}
 	body {
 		font-family: 'Poppins', sans-serif;
-		font-size: 0.8em;
+		font-size: 0.785em;
 		color: #243745;
 		text-align: justify;
 
@@ -32,7 +32,7 @@
 	}
 
 	main {
-		margin: 5mm;
+		margin: 8mm;
 	}
 
 	/* header tags are used for semantic meaning, not styling */

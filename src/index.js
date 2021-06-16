@@ -19,6 +19,7 @@ const html = registerHtml({
 	'project-section': components.projectSection,
 	'project-technologies': components.projectTechnologies,
 	'project-title': components.projectTitle,
+	'project-title-section': components.projectTitleSection,
 	'resume-name': components.resumeName,
 	'section-break': components.sectionBreak,
 })
@@ -62,9 +63,11 @@ const home = () => {
 			case 'resumeProjectSection':
 				return html`
 					<project-section>
-						<project-title>${section.title}</project-title>
-						<project-role>${section.role}</project-role>
-						<project-dates>${section.date}</project-dates>
+						<project-title-section>
+							<project-title>${section.title}</project-title>
+							<project-role>${section.role}</project-role>
+							<project-dates>${section.date}</project-dates>
+						</project-title-section>
 						<project-details>
 							${section.description}
 						</project-details>
