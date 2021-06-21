@@ -3,6 +3,7 @@
 		"contentfulType": "resume",
 		"name": "YOUR_NAME",
 		"contactInformation": "CONTACT_INFO",
+		"objective": "OBJECTIVE",
 		"content": [
 				{
 					"collegeName": "COLLEGE_NAME",

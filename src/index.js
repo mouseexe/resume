@@ -13,6 +13,7 @@ const html = registerHtml({
 	'degree-name': components.degreeName,
 	'degree-section': components.degreeSection,
 	'name-section': components.nameSection,
+	'objective-section': components.objectiveSection,
 	'project-dates': components.projectDates,
 	'project-details': components.projectDetails,
 	'project-role': components.projectRole,
@@ -61,6 +62,8 @@ const home = () => {
 				`
 
 			case 'resumeProjectSection':
+				const descriptionParagraphs = section.description.split('\n');
+				const descriptionBlocks = descriptionParagraphs.map(p => html`<project-details>${p}</project-details>`)
 				return html`
 					<project-section>
 						<project-title-section>
@@ -68,9 +71,7 @@ const home = () => {
 							<project-role>${section.role}</project-role>
 							<project-dates>${section.date}</project-dates>
 						</project-title-section>
-						<project-details>
-							${section.description}
-						</project-details>
+						${descriptionBlocks}
 						<section-break light />
 						<project-technologies>
 							${section.technologies}
@@ -88,6 +89,9 @@ const home = () => {
 					${resumeContent.content.contactInformation}
 				</contact-info>
 			</name-section>
+			<objective-section>
+				${resumeContent.content.objective}
+			</objective-section>
 			${resumeBlocks}
 		</article>
 	`

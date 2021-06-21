@@ -9,6 +9,7 @@ const html = registerHtml({
 export default (props, children) => {
 	return html`
 		<section className="college-section">
+			<section-break medium />
 			<section className="college-content">
 				${children}
 			</section>
