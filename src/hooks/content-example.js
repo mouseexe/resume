@@ -1,4 +1,4 @@
-{
+export default {
 	"content": {
 		"contentfulType": "resume",
 		"name": "YOUR_NAME",

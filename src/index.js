@@ -5,6 +5,9 @@ import useContentful from './hooks/useContentful'
 import './styles.css'
 import * as components from './components'
 
+// use content-example.js if you aren't using contentful
+// import content from './hooks/content-example';
+
 const html = registerHtml({
 	'college-name': components.collegeName,
 	'college-section': components.collegeSection,
@@ -27,6 +30,9 @@ const html = registerHtml({
 
 const home = () => {
 	console.log(components)
+
+	// switch to content-example if you aren't using contentful
+	// const resumeContent = content
 	const resumeContent = useContentful()
 
 	// if resume content isn't ready yet, wait
