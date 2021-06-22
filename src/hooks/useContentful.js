@@ -31,12 +31,12 @@ export default () => {
 	useEffect(async () => {
 		const client = contentful.createClient({
 			// This is the space ID. A space is like a project folder in Contentful terms
-			space: 'cgcthgv2m8e8',
+			space: 'qm0m3o9vsa8h',
 			// This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-			accessToken: '-3rFjDEPCqr6UrBGKw9DINhfvPheGioZjgCeiwTnaTU'
+			accessToken: 'vtiw5E9wlv4_uCw4zZsc7cwdIFDv1RuQzuD7fSsha7E'
 		});
 		// This API call will request an entry with the specified ID from the space defined at the top, using a space-specific access token.
-		const resumeEntry = '3r5AFMjRJUkWIzuCC4qto0'
+		const resumeEntry = '10Oa9cbH8pFnog1KeYk0Vy'
 		let resumeContent = null
 		try {
 			resumeContent = await client.getEntry(resumeEntry, {include: 3})
