@@ -17,8 +17,8 @@
 	body {
 		font-family: 'Poppins', sans-serif;
 		font-size: 0.785em;
-		color: #243745;
-		text-align: justify;
+		color: black;
+		/* text-align: justify; */
 
 		/* print background colors */
 		-webkit-print-color-adjust: exact;
@@ -39,6 +39,10 @@
 	h1, h2, h3, h4 {
 		margin: 0;
 		font-weight: inherit;
+	}
+
+	ul {
+		padding-left: 0;
 	}
 
 }

@@ -1,4 +1,5 @@
 import { registerHtml } from 'tram-one'
+import './degree-name.css'
 
 const html = registerHtml()
 

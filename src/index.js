@@ -26,6 +26,7 @@ const html = registerHtml({
 	'project-title-section': components.projectTitleSection,
 	'resume-name': components.resumeName,
 	'section-break': components.sectionBreak,
+	'skill-section': components.skillSection,
 })
 
 const home = () => {
@@ -51,6 +52,10 @@ const home = () => {
 
 	const resumeBlocks = resumeContent.content.content.map(section => {
 		switch (section.contentfulType) {
+			case 'sectionBreak':
+				return html`
+					<section-break light>${section.sectionTitle}</section-break>
+				`
 			case 'resumeCollegeBlock':
 				const degreeBlocks = section.degrees.map((degreeObject) =>
 					html`
@@ -69,20 +74,27 @@ const home = () => {
 
 			case 'resumeProjectSection':
 				const descriptionParagraphs = section.description.split('\n');
-				const descriptionBlocks = descriptionParagraphs.map(p => html`<project-details>${p}</project-details>`)
+				const descriptionBlocks = descriptionParagraphs.map(p => html`<project-details>${p}</project-details>`);
 				return html`
 					<project-section>
 						<project-title-section>
-							<project-title>${section.title}</project-title>
+						<project-title>${section.title}</project-title>
+							<section>
 							<project-role>${section.role}</project-role>
 							<project-dates>${section.date}</project-dates>
+							</section>
 						</project-title-section>
-						${descriptionBlocks}
-						<section-break light />
-						<project-technologies>
-							${section.technologies}
-						</project-technologies>
+						<ul>
+							${descriptionBlocks}
+						</ul>
 					</project-section>
+				`
+
+			case 'resumeSkillsSection':
+				const individualSkills = section.skills.split('\n');
+				const skillItems = individualSkills.map(p => html`<li>${p}</li>`);
+				return html`
+					<skill-section>${skillItems}</skill-section>
 				`
 		}
 	})

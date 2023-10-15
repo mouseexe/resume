@@ -12,7 +12,7 @@ export default (props, children) => {
 			<section className="name-content">
 				${children}
 			</section>
-			<section-break dark />
+			<section-break dark>Summary</section-break>
 		</header>
 	`
 }

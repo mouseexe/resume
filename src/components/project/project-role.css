@@ -3,5 +3,5 @@
 }
 
 .project-role::after {
-  content: ", ";
+  /* content: ", "; */
 }
